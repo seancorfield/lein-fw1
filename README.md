@@ -1,6 +1,6 @@
 # lein-fw1
 
-A [leiningen](https://github.com/technomancy/leiningen) plugin to help create and manage FW/1 projects.
+A [leiningen](https://github.com/technomancy/leiningen) plugin to help create and manage [FW/1](https://github.com/seancorfield/fw1-clj) projects.
 
 ## Usage
 
