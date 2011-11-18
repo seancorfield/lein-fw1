@@ -5,7 +5,7 @@ A [leiningen](https://github.com/technomancy/leiningen) plugin to help create an
 ## Usage
 
 ```bash
-lein plugin install lein-fw 0.0.3
+lein plugin install lein-fw 0.0.5
 lein fw1 new my-website
 ```
 
