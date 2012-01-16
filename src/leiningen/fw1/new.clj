@@ -54,7 +54,8 @@
   (->file (get-dir :src) "main.clj" (get-template "main.clj"))
   (->file (get-dir :controllers) "main.clj" (get-template "controller.clj"))
   (->file (get-dir :layouts) "default.html" (get-template "layout.html"))
-  (->file (get-dir :views) "default.html" (get-template "view.html")))
+  (->file (get-dir :views) "default.html" (get-template "view.html"))
+  (->file (get-dir :css) "main.css" (get-template "main.css")))
 
 (defn create [proj-name]
   (let [clean-name (clean-proj-name proj-name)]
@@ -67,9 +68,9 @@
                       :layouts ["src" clean-name "layouts" "main"]
                       :views ["src" clean-name "views" "main"]
                       :test ["test" clean-name]
-                      :css ["assets" "css"]
-                      :js ["assets" "js"]
-                      :img ["assets" "img"]}]
+                      :css ["src" clean-name "assets" "css"]
+                      :js ["src" clean-name "assets" "js"]
+                      :img ["src" clean-name "assets" "img"]}]
       (println "Creating FW/1 project: " *project*)
       (println "Creating new dirs at: " *project-dir*)
       (create-dirs)
